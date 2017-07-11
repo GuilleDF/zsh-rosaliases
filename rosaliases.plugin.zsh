@@ -1,4 +1,3 @@
-  alias rl="roslaunch"
   alias rt="rostopic"
   alias rtl="rostopic list"
   alias rti="rostopic info"
@@ -22,3 +21,6 @@
   alias rb="rosbag"
   alias rbp="rosbag play"
   alias rbr="rosbag record"
+
+  alias roslaunch="roslaunch 2> >(grep -v 'WARNING: Package name ' --color=no)"
+  alias rl="roslaunch 2> >(grep -v 'WARNING: Package name ' --color=no)"
